@@ -4,8 +4,26 @@
     line-height: calc(1em + 0.5rem);
 }
 
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('../assets/fonts/Archivo-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('../assets/fonts/LibreBaskerville-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 html {
-    font-size: 14px;
+    font-size: 10px;
+    font-family: 'Archivo', sans-serif;
 }
 
 img, svg {
@@ -25,25 +43,29 @@ body {
     display: flex;
 }
 
-@font-face {
-    font-family: 'Archivo';
-    src: url('../assets/fonts/Archivo-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+#divHeader h1 {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    overflow: hidden;
 }
 
-@font-face {
-    font-family: 'Libre Baskerville';
-    src: url('../assets/fonts/LibreBaskerville-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+:root.light {
+    --color-header-background: ;
+    --color-intro-background: ;
+    --color-form-background: ;
+    --color-accCreation-background: ;
+    --color-button-001: ;
+    --color-button-002: ;
 }
 
-/* Define the custome propierties here
-:root {}
-*/
+:root.dark {
+    --color-header-background: ;
+    --color-intro-background: ;
+    --color-form-background: ;
+    --color-accCreation-background: ;
+    --color-button-001: ;
+    --color-button-002: ;
+}
 
 #sectionHeader {
     width: 30vw;
@@ -51,23 +73,60 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 10px;
 }
 
 #divHeader {
     display: flex;
     background-color: whitesmoke;
-    border: 1px solid gray;
     width: 100%;
     align-items: center;
     justify-content: center;
     bottom: 200px;
-   
+    padding: 7px;
+    flex-flow: row-reverse nowrap;
 }
 
 main {
     width: 70vw;
     height: 100vh;
-    padding: 30px;
+    background-color: aliceblue;
+}
+
+main > #introArticle {
+    position: relative;
+    background-color: beige;
+    width: 100%;
+    height: 35%;
+    padding: 23px;
+}
+
+#introArticle > button {
+    position: absolute;
+    bottom: 70px;
+    left: 500px;
+}
+
+#introDiv > p {
+    width: 65%;
+    font-weight: bolder;
+}
+
+#formArticle > p {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+main > #formArticle {
+    background-color: white;
+    width: 100%;
+    padding: 23px;
+}
+
+main > #accCreationArticle {
+    background-color: darkgray;
+    width: 100%;
+    height: 35%;
+    padding: 23px;
 }
