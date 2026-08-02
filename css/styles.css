@@ -10,7 +10,7 @@ html {
 
 img, svg {
     display: block;
-    max-width: 100%;
+    max-width: 70%;
 }
 
 input, button {
@@ -29,12 +29,15 @@ body {
     width: 30vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
 }
 
 #divHeader {
     display: flex;
-    background-color: gray;
+    background-color: whitesmoke;
+    border: 1px solid gray;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -45,4 +48,5 @@ body {
 main {
     width: 70vw;
     height: 100vh;
+    padding: 30px;
 }
