@@ -4,6 +4,10 @@
     line-height: calc(1em + 0.5rem);
 }
 
+html {
+    font-size: 14px;
+}
+
 img, svg {
     display: block;
     max-width: 100%;
@@ -35,6 +39,7 @@ body {
     align-items: center;
     justify-content: center;
     bottom: 200px;
+   
 }
 
 main {
