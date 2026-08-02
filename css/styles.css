@@ -1,0 +1,18 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button {
+    font: inherit;
+}
+
+p, h1 {
+    overflow-wrap: break-word;
+}
