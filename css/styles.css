@@ -25,6 +25,26 @@ body {
     display: flex;
 }
 
+@font-face {
+    font-family: 'Archivo';
+    src: url('../assets/fonts/Archivo-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Libre Baskerville';
+    src: url('../assets/fonts/LibreBaskerville-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Define the custome propierties here
+:root {}
+*/
+
 #sectionHeader {
     width: 30vw;
     height: 100vh;
@@ -32,6 +52,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    margin-top: 10px;
 }
 
 #divHeader {
