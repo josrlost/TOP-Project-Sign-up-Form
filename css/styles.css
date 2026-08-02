@@ -17,12 +17,27 @@ p, h1 {
     overflow-wrap: break-word;
 }
 
-#divHeader {
+body {
     display: flex;
-    background-color: antiquewhite;
-    width: 100%;
 }
 
 #sectionHeader {
-    width: 40%;
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#divHeader {
+    display: flex;
+    background-color: gray;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    bottom: 200px;
+}
+
+main {
+    width: 70vw;
+    height: 100vh;
 }
