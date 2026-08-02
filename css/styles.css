@@ -16,3 +16,13 @@ input, button {
 p, h1 {
     overflow-wrap: break-word;
 }
+
+#divHeader {
+    display: flex;
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+#sectionHeader {
+    width: 40%;
+}
