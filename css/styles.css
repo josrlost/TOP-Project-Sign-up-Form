@@ -52,7 +52,7 @@ body {
     --color-intro-background: rgb(237, 246, 246, 0.7);
     --color-form-background: rgb(246, 255, 252);
     --color-main-background: rgba(237, 246, 246, 0.419);
-    --color-button-001: rgb(193, 223, 223);
+    --color-button-001: rgb(194, 244, 244);
     --color-button-002: ;
 }
 
@@ -112,9 +112,9 @@ main > #introArticle {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    font-size: 1.2rem;
-    
-    
+    font-size: 1.3rem;
+    padding-bottom: 60px;
+    padding-left: 50px;
 }
 
 #introArticle > button {
@@ -122,6 +122,10 @@ main > #introArticle {
     bottom: 250px;
     left: 971px;
     background-color: var(--color-button-001);
+    border: 0;
+    box-shadow: 1px 1px 5px rgb(22, 30, 34);
+    border-radius: 5%;
+    padding: 10px 20px;
 }
 
 #introDiv {
