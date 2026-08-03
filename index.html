@@ -29,27 +29,27 @@
             <div>
                 <p>Let's do this!</p>
                 <form>
-                    <div class="formDiv">
+                    <div id="fnameDiv">
                         <label for="fname">FIRST NAME:*</label>
-                        <input id="fname" name="fname" type="text" required minlength="5" maxlength="10">
+                        <input id="fname" name="fname" type="text" required minlength="5" maxlength="10" placeholder="John">
                     </div>
-                    <div class="formDiv">
+                    <div id="lnameDiv">
                         <label for="lname">LAST NAME:*</label>
-                        <input id="lname" name="lname" type="text" required minlength="5" maxlength="10">
+                        <input id="lname" name="lname" type="text" required minlength="5" maxlength="10" placeholder="Doe">
                     </div>
-                    <div class="formDiv">
+                    <div id="emailDiv">
                         <label for="email">EMAIL:*</label>
-                        <input id="email" name="email" type="email" required>
-                    </div class="formDiv">
-                    <div class="formDiv">
+                        <input id="email" name="email" type="email" required placeholder="johndoe@email.example">
+                    </div>
+                    <div id="phoneDiv">
                         <label for="phone">PHONE NUMBER:*</label>
-                        <input id="phone" name="phone" type="text" required minlength="10" maxlength="10">
+                        <input id="phone" name="phone" type="text" required minlength="10" maxlength="11" placeholder="1234567890" pattern="[0-9]">
                     </div>
-                    <div class="formDiv">
+                    <div id="pswrdDiv">
                         <label for="pswrd">PASSWORD:*</label>
-                        <input id="pswrd" name="pswrd" type="password" required>
+                        <input id="pswrd" name="pswrd" type="password" required minlength="5" maxlength="14">
                     </div>
-                    <div class="formDiv">
+                    <div id="confirmPswrdDiv">
                         <label for="pswrd">CONFIRM PASSWORD:*</label>
                         <input id="pswrd" name="pswrd" type="password" required>
                     </div>
