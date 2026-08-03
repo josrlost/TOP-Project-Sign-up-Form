@@ -14,3 +14,12 @@ btnSubmit.addEventListener('mouseup', releasingBtn);
 
 btnToggle.addEventListener('mousedown', pressingBtn);
 btnToggle.addEventListener('mouseup', releasingBtn);
+
+const root = document.documentElement;
+
+function setTheme() {
+    const newTheme = root.className === 'dark' ? '' : 'dark';
+    root.className = newTheme;
+}
+
+btnToggle.addEventListener('click', setTheme);

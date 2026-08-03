@@ -61,12 +61,13 @@ body {
 }
 
 :root.dark {
-    --color-header-background: ;
-    --color-intro-background: ;
-    --color-form-background: ;
-    --color-accCreation-background: ;
-    --color-button-001: ;
-
+    --color-general-font: rgb(246, 250, 250);
+    --color-header-background: rgba(25, 26, 26, 0.5);
+    --color-intro-background: rgba(18, 23, 23);
+    --color-form-background: rgb(20, 93, 98);
+    --color-main-background: rgba(13, 14, 14, 0.6);
+    --color-label-font: rgb(193, 194, 194);
+    --color-button-001: rgb(23, 41, 56);
 }
 
 p, h1 {
