@@ -162,6 +162,10 @@ main > #introArticle {
     justify-content: space-between;
 }
 
+form label {
+    display: block;
+}
+
 main > #formArticle {
     background-color: var(--color-form-background);
     width: 100%;
