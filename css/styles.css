@@ -26,6 +26,10 @@ html {
     font-family: 'Archivo', sans-serif;
 }
 
+a {
+color: inherit;
+}
+
 img, svg {
     display: block;
     max-width: 100%;
@@ -80,6 +84,11 @@ p, h1 {
     justify-content: center;
     background-image: url(../assets/images/franck-v-JG80MshfiHo-unsplash.jpg);
     background-size: cover;
+}
+
+#sectionHeader > p {
+    position: absolute;
+    bottom: 40px;
 }
 
 #divHeader {
@@ -221,4 +230,5 @@ button[type="submit"] {
     text-decoration: none;
     font-weight: bolder;
     color: rgb(36, 154, 154);
+    text-decoration: none;
 }
