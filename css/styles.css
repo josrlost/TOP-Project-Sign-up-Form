@@ -35,9 +35,6 @@ input, button {
     font: inherit;
 }
 
-p, h1 {
-    overflow-wrap: break-word;
-}
 
 body {
     display: flex;
@@ -49,12 +46,13 @@ body {
     overflow: hidden;
 }
 
-:root.light {
-    --color-header-background: ;
-    --color-intro-background: ;
-    --color-form-background: ;
-    --color-accCreation-background: ;
-    --color-button-001: ;
+:root {
+    --color-general-font: hsl(180, 3%, 13%);
+    --color-header-background: rgb(215, 240, 240, 0.5);
+    --color-intro-background: #e1dcdb;
+    --color-form-background: #dde1db;
+    --color-main-background: #e1dcdb;
+    --color-button-001: #edfafd;
     --color-button-002: ;
 }
 
@@ -67,9 +65,15 @@ body {
     --color-button-002: ;
 }
 
+p, h1 {
+    overflow-wrap: break-word;
+    color: var(--color-general-font);
+}
+
 #sectionHeader {
-    width: 30vw;
+    width: 40vw;
     height: 100vh;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -80,24 +84,28 @@ body {
 
 #divHeader {
     display: flex;
-    background-color: whitesmoke;
+    background-color: var(--color-header-background);
     width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 130px;
     align-items: center;
     justify-content: center;
     bottom: 200px;
     padding: 7px;
-    flex-flow: row-reverse nowrap;
+    flex-flow: column wrap;
+    padding: 10px 5px;
 }
 
 main {
-    width: 70vw;
+    width: 60vw;
     height: 100vh;
-    background-color: aliceblue;
+    background-color: var(--color-main-background);
 }
 
 main > #introArticle {
     position: relative;
-    background-color: beige;
+    background-color: var(--color-intro-background);
     width: 100%;
     height: 35%;
     padding: 23px;
@@ -120,7 +128,7 @@ main > #introArticle {
 }
 
 main > #formArticle {
-    background-color: white;
+    background-color: var(--color-form-background);
     width: 100%;
     padding: 33px;
 }
