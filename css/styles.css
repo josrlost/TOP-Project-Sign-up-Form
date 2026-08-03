@@ -49,7 +49,7 @@ body {
 :root {
     --color-general-font: rgb(32, 34, 34);
     --color-header-background: rgb(193, 223, 223, 0.5);
-    --color-intro-background: rgb(237, 246, 246, 0.7);
+    --color-intro-background: rgba(245, 255, 255, 0.7);
     --color-form-background: rgb(246, 255, 252);
     --color-main-background: rgba(237, 246, 246, 0.419);
     --color-label-font: rgb(61, 71, 71);
@@ -71,7 +71,7 @@ p, h1 {
 }
 
 #sectionHeader {
-    width: 40vw;
+    width: 48vw;
     height: 100vh;
     position: relative;
     display: flex;
@@ -98,7 +98,7 @@ p, h1 {
 }
 
 main {
-    width: 60vw;
+    width: 53vw;
     height: 100vh;
     background-color: var(--color-main-background);
 }
@@ -120,7 +120,7 @@ main > #introArticle {
 #introArticle > button {
     position: absolute;
     bottom: 250px;
-    left: 971px;
+    left: 790px;
     background-color: var(--color-button-001);
     border: 0;
     box-shadow: 1px 1px 5px rgb(22, 30, 34);
@@ -141,6 +141,10 @@ main > #introArticle {
     font-weight: bolder;
 }
 
+#formArticle {
+    height: 35%;
+}
+
 #formArticle > div {
     display: flex;
     flex-direction: column;
@@ -154,11 +158,14 @@ main > #introArticle {
 }
 
 #formArticle form {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-flow: row wrap;
-    gap: 10px;
-    justify-content: space-between;
+    gap: 20px;
+}
+
+form > #lnameDiv, form > #phoneDiv, form > #confirmPswrdDiv {
+    margin-left: 44px;
 }
 
 form label {
