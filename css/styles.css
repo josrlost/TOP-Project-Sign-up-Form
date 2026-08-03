@@ -200,5 +200,25 @@ main > #formArticle {
 main > #accCreationArticle {
     width: 100%;
     height: 100px;
-    padding: 30px;
+    padding: 30px 10px 10px 53px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px
+}
+
+button[type="submit"] {
+    background-color: var(--color-button-001);
+    border: 0;
+    box-shadow: 1px 1px 5px rgb(22, 30, 34);
+    border-radius: 5%;
+    padding: 10px 40px;
+    color: rgb(122, 126, 129);
+    font-weight: bold;
+    display: block;
+}
+
+#accCreationArticle a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(36, 154, 154);
 }

@@ -2,3 +2,4 @@
 This my attempt at the The Odin Project assignment 'Project: Sign-up Form' from their Intermediate HTML and CSS course, at the end of the Forms module. The assignment requires to build a sign-up page for an 'imaginary service'.
 
 Header logo is an SVG image obtained from the site https://opensvg.dev/icons
+Background image was obtained from https://unsplash.com/s/photos/waste
